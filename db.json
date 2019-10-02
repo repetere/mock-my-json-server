@@ -1,5 +1,48 @@
 {
   "templates": {
+    "header":{
+      "*":{
+        "jsonx":{
+          "component":"header",
+          "children":[
+            {
+              "component":"nav",
+              "children":[
+                {
+                  "component":"h1",
+                  "props":{
+                    "style":{
+                      "textAlign":"left"
+                    }
+                  },
+                  "children":"My App"
+                },
+                {
+                  "component":"div",
+                  "props":{
+                    "style":{
+                      "float":"right"
+                    }
+                  },
+                  "children":[
+                    {
+                      "component":"span",
+                      "children":"User "
+                    },
+                    {
+                      "component":"strong",
+                      "thisprops":{
+                        "_children":["user","email"]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
     "layout": {
       "/home": {
         "jsonx":{
@@ -39,7 +82,23 @@
               ]
             }
           ]
-        }
+        },
+        "resources":{
+          "posts":"https://jsonplaceholder.typicode.com/posts",
+          "profile":{
+            "fetchPath":"https://jsonplaceholder.typicode.com/users/1",
+            "fetchOptions":{
+              "headers":{
+                "custom-header-one":"my header"
+              }
+            }
+          }
+        },
+        "pageData":[{
+          "tagName":"title",
+          "attributes":{},
+           "innerHTML":"My Home Page"
+        }]
       },
       "/about": {
         "jsonx":{
@@ -79,7 +138,18 @@
               ]
             }
           ]
-        }
+        },
+        "resources":{
+          "album":"https://jsonplaceholder.typicode.com/albums/1",
+          "photos":{
+            "fetchPath":"https://jsonplaceholder.typicode.com/albums/1/photos"
+          }
+        },
+        "pageData":[{
+          "tagName":"about page",
+          "attributes":{},
+           "innerHTML":"My about Page"
+        }]
       },
       "/page/:id": {
         "jsonx":{
@@ -119,6 +189,9 @@
               ]
             }
           ]
+        },
+        "resources":{
+          "post":"https://jsonplaceholder.typicode.com/posts/:id"
         }
       }
     }
