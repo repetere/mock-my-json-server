@@ -1,0 +1,126 @@
+{
+  "templates": {
+    "layout": {
+      "/home": {
+        "jsonx":{
+          "component": "div",
+          "children": [
+            {
+              "component": "p",
+              "children": "home page"
+            },
+            {
+              "component": "ul",
+              "children": [
+                {
+                  "component": "li",
+                  "children": [
+                    {
+                      "component": "Link",
+                      "props": {
+                        "to": "/about"
+                      },
+                      "children": "about page"
+                    }
+                  ]
+                },
+                {
+                  "component": "li",
+                  "children": [
+                    {
+                      "component": "Link",
+                      "props": {
+                        "to": "/page/2"
+                      },
+                      "children": "Page two"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "/about": {
+        "jsonx":{
+          "component": "div",
+          "children": [
+            {
+              "component": "p",
+              "children": "about page"
+            },
+            {
+              "component": "ul",
+              "children": [
+                {
+                  "component": "li",
+                  "children": [
+                    {
+                      "component": "Link",
+                      "props": {
+                        "to": "/about"
+                      },
+                      "children": "about page"
+                    }
+                  ]
+                },
+                {
+                  "component": "li",
+                  "children": [
+                    {
+                      "component": "Link",
+                      "props": {
+                        "to": "/page/2"
+                      },
+                      "children": "Page two"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "/page/:id": {
+        "jsonx":{
+          "component": "div",
+          "children": [
+            {
+              "component": "p",
+              "children": "post page"
+            },
+            {
+              "component": "ul",
+              "children": [
+                {
+                  "component": "li",
+                  "children": [
+                    {
+                      "component": "Link",
+                      "props": {
+                        "to": "/about"
+                      },
+                      "children": "about page"
+                    }
+                  ]
+                },
+                {
+                  "component": "li",
+                  "children": [
+                    {
+                      "component": "Link",
+                      "props": {
+                        "to": "/page/2"
+                      },
+                      "children": "Page two"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
