@@ -9,13 +9,21 @@
               "component":"nav",
               "children":[ 
                 { 
-                  "component":"h1",
-                  "props":{ 
-                    "style":{ 
-                      "textAlign":"left"
-                    }
+                  "component":"Link",
+                  "props":{
+                    "to":"/home"
                   },
-                  "children":"My App Header"
+                  "children":[
+                    {
+                      "component":"h1",
+                      "props":{ 
+                        "style":{ 
+                          "textAlign":"left"
+                        }
+                      },
+                      "children":"My App Header"
+                    }
+                  ]
                 },
                 { 
                   "component":"div",
