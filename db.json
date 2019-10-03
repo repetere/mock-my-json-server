@@ -1,191 +1,233 @@
-{
-	"templates": {
-		"header": {
-			"/:catchall*": {
-				"jsonx": {
-					"component": "header",
-					"children": [{
-						"component": "nav",
-						"children": [{
-								"component": "h1",
-								"props": {
-									"style": {
-										"textAlign": "left"
-									}
-								},
-								"children": "My App Header"
-							},
-							{
-								"component": "div",
-								"props": {
-									"style": {
-										"float": "right"
-									}
-								},
-								"children": [{
-										"component": "span",
-										"children": "User "
-									},
-									{
-										"component": "strong",
-										"thisprops": {
-											"_children": ["user", "email"]
-										}
-									}
-								]
-							}
-						]
-					}]
-				}
-			}
-		},
-		"root": {
-			"/home": {
-				"jsonx": {
-					"component": "div",
-					"children": [{
-							"component": "p",
-							"children": "home page"
-						},
-						{
-							"component": "ul",
-							"children": [{
-									"component": "li",
-									"children": [{
-										"component": "Link",
-										"props": {
-											"to": "/about"
-										},
-										"children": "about page"
-									}]
-								},
-								{
-									"component": "li",
-									"children": [{
-										"component": "Link",
-										"props": {
-											"to": "/page/2"
-										},
-										"children": "Page two"
-									}]
-								}
-							]
-						}
-					]
-				},
-				"resources": {
-					"posts": "https://jsonplaceholder.typicode.com/posts",
-					"profile": {
-						"fetchPath": "https://jsonplaceholder.typicode.com/users/1",
-						"fetchOptions": {
-							"headers": {
-								"custom-header-one": "my header"
-							}
-						}
-					}
-				},
-				"pageData": [{
-					"tagName": "title",
-					"attributes": {},
-					"innerHTML": "My Home Page"
-				}]
-			},
-			"/about": {
-				"jsonx": {
-					"component": "div",
-					"children": [{
-							"component": "p",
-							"children": "about page"
-						},
-						{
-							"component": "ul",
-							"children": [{
-									"component": "li",
-									"children": [{
-										"component": "Link",
-										"props": {
-											"to": "/about"
-										},
-										"children": "about page"
-									}]
-								},
-								{
-									"component": "li",
-									"children": [{
-										"component": "Link",
-										"props": {
-											"to": "/page/2"
-										},
-										"children": "Page two"
-									}]
-								}
-							]
-						}
-					]
-				},
-				"resources": {
-					"album": "https://jsonplaceholder.typicode.com/albums/1",
-					"photos": {
-						"fetchPath": "https://jsonplaceholder.typicode.com/albums/1/photos"
-					}
-				},
-				"pageData": [{
-					"tagName": "title",
-					"attributes": {},
-					"innerHTML": "My about Page"
-				}, {
+{ 
+  "templates":{ 
+    "header":{ 
+      "/:catchall*":{ 
+        "jsonx":{ 
+          "component":"header",
+          "children":[ 
+            { 
+              "component":"nav",
+              "children":[ 
+                { 
+                  "component":"h1",
+                  "props":{ 
+                    "style":{ 
+                      "textAlign":"left"
+                    }
+                  },
+                  "children":"My App Header"
+                },
+                { 
+                  "component":"div",
+                  "props":{ 
+                    "style":{ 
+                      "float":"right"
+                    }
+                  },
+                  "children":[ 
+                    { 
+                      "component":"span",
+                      "children":"User "
+                    },
+                    { 
+                      "component":"strong",
+                      "thisprops":{ 
+                        "_children":[ 
+                          "user",
+                          "email"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "root":{ 
+      "/home":{ 
+        "jsonx":{ 
+          "component":"div",
+          "children":[ 
+            { 
+              "component":"p",
+              "children":"home page"
+            },
+            { 
+              "component":"ul",
+              "children":[ 
+                { 
+                  "component":"li",
+                  "children":[ 
+                    { 
+                      "component":"Link",
+                      "props":{ 
+                        "to":"/about"
+                      },
+                      "children":"about page"
+                    }
+                  ]
+                },
+                { 
+                  "component":"li",
+                  "children":[ 
+                    { 
+                      "component":"Link",
+                      "props":{ 
+                        "to":"/page/2"
+                      },
+                      "children":"Page two"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "resources":{ 
+          "posts":"https://jsonplaceholder.typicode.com/posts",
+          "profile":{ 
+            "fetchPath":"https://jsonplaceholder.typicode.com/users/1",
+            "fetchOptions":{ 
+              "headers":{ 
+                "custom-header-one":"my header"
+              }
+            }
+          }
+        },
+        "pageData":[ 
+          { 
+            "tagName":"title",
+            "attributes":{ 
 
-					"tagName": "meta",
-					"attributes": {
-						"name": "theme-color",
-						"content": "#9a1c5e"
-					},
-					"innerHTML": "My about Page"
-				}]
-			},
-			"/page/:id": {
-				"jsonx": {
-					"component": "div",
-					"children": [{
-							"component": "p",
-							"children": "post page"
-						},
-						{
-							"component": "ul",
-							"children": [{
-									"component": "li",
-									"children": [{
-										"component": "Link",
-										"props": {
-											"to": "/about"
-										},
-										"children": "about page"
-									}]
-								},
-								{
-									"component": "li",
-									"children": [{
-										"component": "Link",
-										"props": {
-											"to": "/page/2"
-										},
-										"children": "Page two"
-									}]
-								}
-							]
-						}
-					]
-				},
-				"resources": {
-					"post": "https://jsonplaceholder.typicode.com/posts/:id"
-				},
+            },
+            "innerHTML":"My Home Page"
+          },
+          { 
+            "tagName":"meta",
+            "attributes":{ 
+              "name":"theme-color",
+              "content":"#8b2d40"
+            },
+          }
+        ]
+      },
+      "/about":{ 
+        "jsonx":{ 
+          "component":"div",
+          "children":[ 
+            { 
+              "component":"p",
+              "children":"about page"
+            },
+            { 
+              "component":"ul",
+              "children":[ 
+                { 
+                  "component":"li",
+                  "children":[ 
+                    { 
+                      "component":"Link",
+                      "props":{ 
+                        "to":"/about"
+                      },
+                      "children":"about page"
+                    }
+                  ]
+                },
+                { 
+                  "component":"li",
+                  "children":[ 
+                    { 
+                      "component":"Link",
+                      "props":{ 
+                        "to":"/page/2"
+                      },
+                      "children":"Page two"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "resources":{ 
+          "album":"https://jsonplaceholder.typicode.com/albums/1",
+          "photos":{ 
+            "fetchPath":"https://jsonplaceholder.typicode.com/albums/1/photos"
+          }
+        },
+        "pageData":[ 
+          { 
+            "tagName":"title",
+            "attributes":{ 
 
-				"pageData": [{
-					"tagName": "title",
-					"attributes": {},
-					"innerHTML": "My Dynamic Post - :id"
-				}]
-			}
-		}
-	}
+            },
+            "innerHTML":"My about Page"
+          },
+          { 
+            "tagName":"meta",
+            "attributes":{ 
+              "name":"theme-color",
+              "content":"#9a1c5e"
+            },
+          }
+        ]
+      },
+      "/page/:id":{ 
+        "jsonx":{ 
+          "component":"div",
+          "children":[ 
+            { 
+              "component":"p",
+              "children":"post page"
+            },
+            { 
+              "component":"ul",
+              "children":[ 
+                { 
+                  "component":"li",
+                  "children":[ 
+                    { 
+                      "component":"Link",
+                      "props":{ 
+                        "to":"/about"
+                      },
+                      "children":"about page"
+                    }
+                  ]
+                },
+                { 
+                  "component":"li",
+                  "children":[ 
+                    { 
+                      "component":"Link",
+                      "props":{ 
+                        "to":"/page/2"
+                      },
+                      "children":"Page two"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "resources":{ 
+          "post":"https://jsonplaceholder.typicode.com/posts/:id"
+        },
+        "pageData":[ 
+          { 
+            "tagName":"title",
+            "attributes":{ 
+
+            },
+            "innerHTML":"My Dynamic Post - :id"
+          }
+        ]
+      }
+    }
+  }
 }
