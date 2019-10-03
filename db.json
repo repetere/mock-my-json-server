@@ -15,7 +15,7 @@
                       "textAlign":"left"
                     }
                   },
-                  "children":"My App"
+                  "children":"My App Header"
                 },
                 {
                   "component":"div",
