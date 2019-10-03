@@ -1,7 +1,7 @@
 {
   "templates": {
     "header":{
-      '/:catchall*': {
+      "/:catchall*": {
         "jsonx":{
           "component":"header",
           "children":[
