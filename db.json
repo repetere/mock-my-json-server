@@ -146,8 +146,16 @@
           }
         },
         "pageData":[{
-          "tagName":"about page",
+          "tagName":"title",
           "attributes":{},
+           "innerHTML":"My about Page"
+        },{
+          
+          "tagName":"meta",
+          "attributes":{
+          "name":"theme-color",
+            "content":"#9a1c5e"
+          },
            "innerHTML":"My about Page"
         }]
       },
@@ -192,7 +200,13 @@
         },
         "resources":{
           "post":"https://jsonplaceholder.typicode.com/posts/:id"
-        }
+        },
+        
+        "pageData":[{
+          "tagName":"title",
+          "attributes":{},
+           "innerHTML":"My Web Post - :id"
+        }],
       }
     }
   }
