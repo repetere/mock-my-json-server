@@ -72,6 +72,30 @@
                     { 
                       "component":"Link",
                       "props":{ 
+                        "to":"/"
+                      },
+                      "children":"index"
+                    }
+                  ]
+                },
+                { 
+                  "component":"li",
+                  "children":[ 
+                    { 
+                      "component":"Link",
+                      "props":{ 
+                        "to":"/home"
+                      },
+                      "children":"home page"
+                    }
+                  ]
+                },
+                { 
+                  "component":"li",
+                  "children":[ 
+                    { 
+                      "component":"Link",
+                      "props":{ 
                         "to":"/about"
                       },
                       "children":"about page"
@@ -139,6 +163,30 @@
                     { 
                       "component":"Link",
                       "props":{ 
+                        "to":"/"
+                      },
+                      "children":"index"
+                    }
+                  ]
+                },
+                { 
+                  "component":"li",
+                  "children":[ 
+                    { 
+                      "component":"Link",
+                      "props":{ 
+                        "to":"/home"
+                      },
+                      "children":"home page"
+                    }
+                  ]
+                },
+                { 
+                  "component":"li",
+                  "children":[ 
+                    { 
+                      "component":"Link",
+                      "props":{ 
                         "to":"/about"
                       },
                       "children":"about page"
@@ -167,6 +215,7 @@
             "fetchPath":"https://jsonplaceholder.typicode.com/albums/1/photos"
           }
         },
+        "preRenderFunctions":["func:viewx.Functions.requireAuth"],
         "pageData":[ 
           { 
             "tagName":"title",
@@ -195,6 +244,30 @@
             { 
               "component":"ul",
               "children":[ 
+                { 
+                  "component":"li",
+                  "children":[ 
+                    { 
+                      "component":"Link",
+                      "props":{ 
+                        "to":"/"
+                      },
+                      "children":"index"
+                    }
+                  ]
+                },
+                { 
+                  "component":"li",
+                  "children":[ 
+                    { 
+                      "component":"Link",
+                      "props":{ 
+                        "to":"/home"
+                      },
+                      "children":"home page"
+                    }
+                  ]
+                },
                 { 
                   "component":"li",
                   "children":[ 
