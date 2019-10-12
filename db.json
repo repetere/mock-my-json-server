@@ -16,7 +16,7 @@
 				"_id": "5ce6c7a62e1f49fbf8871b98",
 				"email": "john.smith@example.com",
 				"name": "john.smith@example.com",
-				"password": "$2b$10$0Qg312",
+				"password": "$2b$10$0Qg2",
 				"extensionattributes": {
 					"passport": {
 						"user_activation_token": "eyJhbGciOiJ",
