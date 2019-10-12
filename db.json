@@ -1,33 +1,29 @@
 {
-	"auth": {
-		"user": {
-			"login": {
-				"expires": 1559319752291,
-				"timeout": "2019-05-31T16:22:32.291Z",
-				"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI1Y2U2YzdhNjJlMWY0OWZiZjg4NzFiOTgiLCJlbnQiOiJ1c2VyIiwiZXhwIjoxNTU5MzE5NzUyMjkxfQ.Tt9hwX0OS4brF-qa9VmY1c4Et_BL7f6BFtv-s9zDaow"
-			},
-			"mfa": {
-				"authenticated": true
-			},
-			"profile": {
-				"description": "No Profile",
-				"accounttype": "basic",
-				"entitytype": "user",
-				"_id": "5ce6c7a62e1f49fbf8871b98",
-				"email": "john.smith@example.com",
-				"name": "john.smith@example.com",
-				"password": "$2b$10$0Qg2",
-				"extensionattributes": {
-					"passport": {
-						"user_activation_token": "eyJhbGciOiJ",
-						"user_activation_token_link": "-2b-10-",
-						"reset_activation_expires_millis": 1558630062170
-					}
-				},
-				"createdat": "2019-05-23T16:17:42.258Z",
-				"updatedat": "2019-05-23T16:17:42.258Z"
+	"auth_user_login": {
+		"expires": 1559319752291,
+		"timeout": "2019-05-31T16:22:32.291Z",
+		"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI1Y2U2YzdhNjJlMWY0OWZiZjg4NzFiOTgiLCJlbnQiOiJ1c2VyIiwiZXhwIjoxNTU5MzE5NzUyMjkxfQ.Tt9hwX0OS4brF-qa9VmY1c4Et_BL7f6BFtv-s9zDaow"
+	},
+	"auth_user_mfa": {
+		"authenticated": true
+	},
+	"auth_user_profile": {
+		"description": "No Profile",
+		"accounttype": "basic",
+		"entitytype": "user",
+		"_id": "5ce6c7a62e1f49fbf8871b98",
+		"email": "john.smith@example.com",
+		"name": "john.smith@example.com",
+		"password": "$2b$10$0Qg2",
+		"extensionattributes": {
+			"passport": {
+				"user_activation_token": "eyJhbGciOiJ",
+				"user_activation_token_link": "-2b-10-",
+				"reset_activation_expires_millis": 1558630062170
 			}
-		}
+		},
+		"createdat": "2019-05-23T16:17:42.258Z",
+		"updatedat": "2019-05-23T16:17:42.258Z"
 	},
 	"templates": {
 		"header": {
