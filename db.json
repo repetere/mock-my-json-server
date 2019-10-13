@@ -59,7 +59,7 @@
 										"component": "button",
 										"children": "Logout",
 										"__dangerouslyBindEvalProps": {
-					  "onClick": "(function(){ console.log('Logout onClick this',this); console.log('onClick arguments',arguments);   this.viewx.Functions.loginOut();   })"
+					  "onClick": "(function(){ console.log('Logout onClick this',this); console.log('onClick arguments',arguments);   this.viewx.Functions.loginOut(/**/);   })"
 									      	},
 										"comparisonprops": [{
 										    "left": ["user","loggedIn"],
