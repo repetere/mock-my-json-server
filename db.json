@@ -72,7 +72,7 @@
 										"component": "button",
 										"children": "Login",
 										"__dangerouslyBindEvalProps": {
-				  "onClick": "(function(){ console.log('Login onClick this',this); console.log('onClick arguments',arguments); this.props.history.push(this.settings.routes.login); })"
+				  "onClick": "(function(){ console.log('Login onClick this',this); console.log('onClick arguments',arguments); this.props.history.push(this.viewx.settings.routes.login); })"
 									      	},
 										"comparisonprops": [{
 										    "left": ["user","loggedIn"],
