@@ -54,18 +54,31 @@
 										"float": "right"
 									}
 								},
-								"children": [{
-										"component": "span",
-										"children": "User "
+								"children": [
+									{
+										"component": "button",
+										"children": "Logout",
+										"__dangerouslyBindEvalProps": {
+					  "onClick": "(function(){ console.log('Logout onClick this',this); console.log('onClick arguments',arguments); this.viewx.Functions.loginOut(values); })"
+									      	},
+										"comparisonprops": [{
+										    "left": ["user","loggedIn"],
+										    "operation":"==",
+										    "right":[true]
+										  }]
 									},
 									{
-										"component": "strong",
-										"thisprops": {
-											"_children": [
-												"user",
-												"email"
-											]
-										}
+										
+										"component": "button",
+										"children": "Login",
+										"__dangerouslyBindEvalProps": {
+				  "onClick": "(function(){ console.log('Login onClick this',this); console.log('onClick arguments',arguments); this.props.history.push(this.settings.routes.login); })"
+									      	},
+										"comparisonprops": [{
+										    "left": ["user","loggedIn"],
+										    "operation":"==",
+										    "right":[false]
+										  }]
 									}
 								]
 							}
