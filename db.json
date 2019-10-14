@@ -61,6 +61,9 @@
 										"__dangerouslyBindEvalProps": {
 					  "onClick": "(function(){ console.log('Logout onClick this',this); this.viewx.Functions.logoutUser(/**/);   })"
 									      	},
+										"thisprops":{
+											"user":["user"]
+										},
 										"comparisonprops": [{
 										    "left": ["user","loggedIn"],
 										    "operation":"==",
@@ -74,6 +77,9 @@
 										"__dangerouslyBindEvalProps": {
 				  "onClick": "(function(){ console.log('Login onClick this',this); console.log('onClick arguments',arguments); this.props.history.push(this.viewx.settings.routes.login); })"
 									      	},
+										"thisprops":{
+											"user":["user"]
+										},
 										"comparisonprops": [{
 										    "left": ["user","loggedIn"],
 										    "operation":"==",
