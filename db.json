@@ -67,7 +67,7 @@
 										"comparisonprops": [{
 										    "left": ["user","loggedIn"],
 										    "operation":"==",
-										    "right":true
+										    "right": true
 										  }]
 									},
 									{
@@ -83,7 +83,7 @@
 										"comparisonprops": [{
 										    "left": ["user","loggedIn"],
 										    "operation":"==",
-										    "right":[false]
+										    "right": false
 										  }]
 									}
 								]
