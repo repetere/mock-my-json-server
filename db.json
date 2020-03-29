@@ -130,7 +130,14 @@
 										"props": {
 											"to": "/about"
 										},
-										"children": "about page"
+										"children": "about page "
+									},
+                  {
+										"component": "Link",
+										"props": {
+											"to": "/about-un-auth"
+										},
+										"children": " about page (no auth)"
 									}]
 								},
 								{
@@ -210,7 +217,14 @@
 										"props": {
 											"to": "/about"
 										},
-										"children": "about page"
+										"children": "about page "
+									},
+                  {
+										"component": "Link",
+										"props": {
+											"to": "/about-un-auth"
+										},
+										"children": " about page (no auth)"
 									}]
 								},
 								{
@@ -285,7 +299,14 @@
 										"props": {
 											"to": "/about"
 										},
-										"children": "about page"
+										"children": "about page "
+									},
+                  {
+										"component": "Link",
+										"props": {
+											"to": "/about-un-auth"
+										},
+										"children": " about page (no auth)"
 									}]
 								},
 								{
@@ -361,7 +382,14 @@
 										"props": {
 											"to": "/about"
 										},
-										"children": "about page"
+										"children": "about page "
+									},
+                  {
+										"component": "Link",
+										"props": {
+											"to": "/about-un-auth"
+										},
+										"children": " about page (no auth)"
 									}]
 								},
 								{
